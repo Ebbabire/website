@@ -9,9 +9,9 @@ const Navbar = () => {
   return (
     <>
       {!menuOpened ? (
-        <nav className="px-4 py-2 shadow-lg">
-          <div className="flex justify-between items-center lg:w-[65%] mx-auto">
-            <div>
+        <nav className="px-2 py-2  shadow-lg fixed w-full bg-white z-[99]">
+          <div className="flex justify-between items-center ml- md:ml-10 lg:ml-[15%]">
+            <div className="order-2 md:order-1">
               <a href="#main">
                 <span className="text-3xl font-semibold font-Kalam tracking-wider pr-2">
                   Ebba
@@ -19,7 +19,7 @@ const Navbar = () => {
                 <span className="font-extrabold text-3xl text-red-600">.</span>
               </a>
             </div>
-            <div className="hidden md:flex">
+            <div className="hidden md:flex order-1 md:order-2">
               <a href="#main" className="lg:pr-4">
                 <span className="text-lg font-medium tracking-wide hover:bg-slate-200 transition duration-300 ease-in-out rounded-lg py-2 px-4">
                   Home
@@ -46,6 +46,9 @@ const Navbar = () => {
               onClick={() => setMenuOpened(!menuOpened)}
             >
               <AiOutlineMenu className="text-2xl" />
+            </div>
+            <div className="order-3 lg:mr-[5%] bg-blue-600 py-1 px-2  rounded-full text-white text-sm md:text-xl md:py-2 md:px-4">
+              <span>Download CV</span>
             </div>
           </div>
         </nav>

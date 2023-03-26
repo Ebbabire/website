@@ -1,9 +1,11 @@
+import Home from './components/Home';
 import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="flex flex-col justify-between h-screen">
+    <div className="bg-slate-200 flex flex-col h-screen">
       <Navbar />
+      <Home />
     </div>
   );
 }
