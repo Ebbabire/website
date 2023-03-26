@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       {!menuOpened ? (
-        <nav className="px-2 py-2  shadow-lg fixed w-full bg-white z-[99]">
+        <nav className="px-2 py-2  shadow-lg fixed top-0 right-0 left-0 bg-white z-[99]">
           <div className="flex justify-between items-center ml- md:ml-10 lg:ml-[15%]">
             <div className="order-2 md:order-1">
               <a href="#main">
